@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}" />
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+  </head>
+  <body>
+    <h1 id="title">{{ title }}</h1>
+    <div id="content">{{ content }}</div>
+    <div id="container">
+      <div id="Input-Text" class="box">
+        <h1 class="innerheading">Input Text</h1>
+        <div>
+          <textarea name="Input" id="Inputtext" class="showbox"></textarea>
+        </div>
+      </div>
+      <div id="Output-Text" class="box">
+        <h1 class="innerheading">Output Text</h1>
+        <div>
+          <textarea name="Output" id="outputtoken" class="showbox"></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
